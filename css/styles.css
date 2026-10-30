@@ -1,0 +1,198 @@
+
+/* GENERAL - - - - */
+
+body{
+	color: midnightblue;
+}
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#siteBG{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -99;
+	width: 100vw;
+	height: 100vh;
+
+	background-image: url(../images/bg.webp);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 80%;
+
+	/*filter: saturate(40%);*/
+	animation: pulse 10s infinite ease-in-out;
+}
+
+@keyframes pulse{
+	0%{
+		filter: saturate(40%) contrast(125%) blur(0px);
+	}
+	50%{
+		filter: saturate(100%) contrast(80%) blur(10px);
+	}
+	100%{
+		filter: saturate(40%) contrast(125%) blur(0px);
+	}
+}
+
+/* SECTIONS - - - - */
+
+#hero{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.holder{
+	padding: 40px 0;
+	width: 100%;
+}
+
+.holder:first-of-type{
+	align-self: flex-start;
+}
+
+.holder:last-of-type{
+	align-self: flex-end;
+}
+
+/* SCROLL - - - - */
+
+.holder p{
+	font-family: 'my_FunnelSans_Light', sans-serif;
+	font-size: 14px;
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+/* MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 479.9px){
+	:root{
+		--1-column-w: calc(25vw - 20px);
+		--2-column-w: calc(50vw - 24px);
+		--3-column-w: calc(75vw - 28px);
+
+		--header-h: 50px;
+		--gutter-w: 16px;
+	}
+
+	.container{
+		width: calc(100vw - 32px); /* 16px margin */
+	}
+
+	.t, .d{
+		display: none;
+	}
+
+}
+
+/* LARGE MOBILE STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 480px) and (max-width: 767.9px){
+	:root{
+		--1-column-w: calc(25vw - 20px);
+		--2-column-w: calc(50vw - 24px);
+		--3-column-w: calc(75vw - 28px);
+
+		--header-h: 50px;
+		--gutter-w: 16px;
+	}
+
+	.container{
+		width: calc(100vw - 32px); /* 16px margin */
+	}
+
+	.t, .d{
+		display: none;
+	}
+
+}
+
+/* TABLET STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 768px) and (max-width: 1024.9px){
+	:root{
+		--1-column-w: calc(12.5vw - 18px);
+		--2-column-w: calc(25vw - 20px);
+		--3-column-w: calc(37.5vw - 22px);
+		--4-column-w: calc(50vw - 24px);
+		--5-column-w: calc(62.5vw - 26px);
+		--6-column-w: calc(75vw - 28px);
+		--7-column-w: calc(87.5vw - 30px);
+
+		--header-h: 50px;
+		--gutter-w: 16px;
+	}
+
+	.container{
+		width: calc(100vw - 32px); /* 16px margin */
+	}
+
+	.d{
+		display: none;
+	}
+	
+}
+
+/* LAPTOP STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 1025px)/* and (max-width: 1279.9px)*/{
+	:root{
+		/*--1-column-w: calc(12.5vw - 27px);
+		--2-column-w: calc(25vw - 30px);
+		--3-column-w: calc(37.5vw - 33px);
+		--4-column-w: calc(50vw - 36px);
+		--5-column-w: calc(62.5vw - 39px);
+		--6-column-w: calc(75vw - 42px);
+		--7-column-w: calc(87.5vw - 45px);*/
+
+		--1-column-w: calc(8.33333333vw - 26px);
+		--2-column-w: calc(16.66666667vw - 28px);
+		--3-column-w: calc(25vw - 30px);
+		--4-column-w: calc(33.33333333vw - 32px);
+		--5-column-w: calc(41.66666667vw - 34px);
+		--6-column-w: calc(50vw - 36px);
+		--7-column-w: calc(58.33333333vw - 38px);
+		--8-column-w: calc(66.66666667vw - 40px);
+		--9-column-w: calc(75vw - 42px);
+		--10-column-w: calc(83.33333333vw - 44px);
+		--11-column-w: calc(91.66666667vw - 46px);
+
+		--header-h: 50px;
+		--gutter-w: 24px;
+	}
+
+	.container{
+		width: calc(100vw - 48px); /* 24px margin */
+	}
+
+}
+
+/* DESKTOP STYLES ////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*@media only screen and (min-width: 1280px){
+	:root{
+		--1-column-w: 80px;
+		--2-column-w: 184px;
+		--3-column-w: 288px;
+		--4-column-w: 392px;
+		--5-column-w: 496px;
+		--6-column-w: 600px;
+		--7-column-w: 704px;
+		--8-column-w: 808px;
+		--9-column-w: 912px;
+		--10-column-w: 1016px;
+		--11-column-w: 1120px;
+
+		--header-h: 60px;
+		--gutter-w: 24px;
+	}
+
+	.container{
+		width: 1224px;
+	}
+	
+}*/

@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'my_FunnelDisplay_Light';
+    src: url('../fonts/FunnelDisplay-Light.woff2') format('woff2'),
+        url('../fonts/FunnelDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'my_FunnelDisplay_Medium';
+    src: url('../fonts/FunnelDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/FunnelDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'my_FunnelDisplay_Bold';
+    src: url('../fonts/FunnelDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/FunnelDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* - - - - */
+
+@font-face {
+    font-family: 'my_FunnelSans_Light';
+    src: url('../fonts/FunnelSans-Light.woff2') format('woff2'),
+        url('../fonts/FunnelSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'my_FunnelSans_LightIt';
+    src: url('../fonts/FunnelSans-LightItalic.woff2') format('woff2'),
+        url('../fonts/FunnelSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'my_FunnelSans_Medium';
+    src: url('../fonts/FunnelSans-Medium.woff2') format('woff2'),
+        url('../fonts/FunnelSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'my_FunnelSans_MediumIt';
+    src: url('../fonts/FunnelSans-MediumItalic.woff2') format('woff2'),
+        url('../fonts/FunnelSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'my_FunnelSans_Bold';
+    src: url('../fonts/FunnelSans-Bold.woff2') format('woff2'),
+        url('../fonts/FunnelSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'my_FunnelSans_BoldIt';
+    src: url('../fonts/FunnelSans-BoldItalic.woff2') format('woff2'),
+        url('../fonts/FunnelSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
